@@ -3,7 +3,7 @@ import Resumable from "resumablejs";
 
 export default function Upload() {
   const resumable = new Resumable({
-    target: "http://127.0.0.1:8000/api/store",
+    target: "https://video.hoolo.live/api/store",
     chunkSize: 1 * 1024 * 1024 * 5,
     simultaneousUploads: 4,
     testChunks: false,

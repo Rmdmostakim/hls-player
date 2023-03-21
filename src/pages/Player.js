@@ -14,7 +14,7 @@ export default function Player() {
   }
   useEffect(() => {
     const video = ref.current;
-    const src = `http://127.0.0.1:8000/api/watch/${playlist}`;
+    const src = `https://video.hoolo.live/api/watch/${playlist}`;
     const defaultOptions = {};
     if (Hls.isSupported()) {
       const hls = new Hls();
